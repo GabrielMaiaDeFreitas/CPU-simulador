@@ -1,0 +1,31 @@
+INSTRUÇÕES DE COMPILAÇÃO - GCC NO UBUNTU
+
+O simulador foi desenvolvido em linguagem C e deve ser compilado utilizando o GCC no Ubuntu.
+
+Estrutura esperada do projeto:
+
+Trabalho_CPU/
+├── programa.txt
+├── CodigoFonte/
+│   └── main.c
+├── Instrucoes/
+│   ├── InstrucoesDeUso.txt
+│   ├── InstrucoesDeCompilacao.txt
+│   └── InstrucoesDoPrograma.txt
+└── TrabalhoCompilado/
+    ├── cpu_simulador
+    └── programa.txt
+
+Para compilar o simulador, abra o terminal na pasta raiz do projeto e execute o seguinte comando:
+
+gcc CodigoFonte/main.c -o cpu_simulador
+
+Após a compilação, execute o simulador com:
+
+./cpu_simulador
+
+Observações:
+- O arquivo programa.txt deve estar na pasta raiz do projeto durante a execução.
+- O simulador realiza automaticamente a leitura do arquivo programa.txt.
+- O programa deve ser executado pelo terminal.
+- O executável compilado no Ubuntu utilizando GCC encontra-se na pasta TrabalhoCompilado.

@@ -1,0 +1,18 @@
+# Arquivos compilados de C
+*.exe
+*.o
+*.out
+
+# Executável sem extensão
+cpu_simulador
+
+# Pasta com arquivos compilados
+TrabalhoCompilado/
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,38 @@
+INSTRUÇÕES DO PROGRAMA EM ASSEMBLY
+
+O arquivo programa.txt contém o programa em assembly responsável por realizar a soma de duas matrizes 3 x 3 com valores de 16 bits.
+
+Organização da memória:
+
+Matriz A (0xCA até 0xDB)
+
+| 0001 | 0002 | 0003 |
+| 0004 | 0005 | 0006 |
+| 0007 | 0008 | 0009 |
+
+Matriz B (0xDC até 0xED)
+
+| 000A | 0014 | 001E |
+| 0028 | 0032 | 003C |
+| 0046 | 0050 | 005A |
+
+Resultado esperado (0xEE até 0xFF)
+
+| 000B | 0016 | 0021 |
+| 002C | 0037 | 0042 |
+| 004D | 0058 | 0063 |
+
+Funcionamento do programa:
+
+1. O programa percorre os 9 elementos da matriz A.
+2. Para cada posição, carrega os elementos correspondentes das matrizes A e B.
+3. Os dois valores são somados.
+4. O resultado é armazenado na região de memória destinada à matriz resultante.
+5. O processo se repete até que todos os elementos sejam somados.
+6. Ao final, a instrução hlt encerra a execução.
+
+Para executar:
+- Certifique-se de que o arquivo programa.txt está na pasta raiz do projeto.
+- Execute o arquivo cpu_simulador.
+- Pressione ENTER para avançar os ciclos de execução.
+- Ao final, confira os valores armazenados nos endereços de 0xEE até 0xFF.

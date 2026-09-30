@@ -1,0 +1,64 @@
+INSTRUÇÕES DE USO DO SIMULADOR - AOC
+Alunos: Gabriel Alvis Nogueira e Gabriel Maia de Freitas
+
+Este programa simula o funcionamento de uma CPU baseada na arquitetura de Von Neumann, executando instruções a partir de um arquivo de texto chamado programa.txt.
+
+O simulador opera em modo passo a passo, permitindo acompanhar o estado da CPU e da memória a cada ciclo de execução.
+
+PASSO A PASSO PARA UTILIZAÇÃO
+
+1. Certifique-se de que o arquivo programa.txt está na pasta raiz do projeto, no mesmo local de execução do programa.
+
+2. Compile e execute o arquivo cpu_simulador pelo terminal.
+
+3. Ao iniciar, o simulador carrega o conteúdo do arquivo programa.txt para a memória principal.
+
+4. A tela exibirá o estado atual da CPU e da memória, incluindo:
+   - Registradores R0 a R7;
+   - Registrador MBR;
+   - Registrador MAR;
+   - Registrador IMM;
+   - Registrador PC;
+   - Registrador IR;
+   - Campos RO0 e RO1;
+   - Flags E, L e G;
+   - Mapa completo dos 256 endereços de memória.
+
+5. Para executar o próximo ciclo de máquina, pressione ENTER.
+
+6. A cada ENTER pressionado, a CPU realiza as etapas de busca, decodificação e execução da próxima instrução.
+
+7. Após cada ciclo, a tela é atualizada, permitindo acompanhar as alterações nos registradores, flags e memória.
+
+8. A execução termina quando a instrução hlt é encontrada.
+
+FORMATO DO ARQUIVO programa.txt
+
+O arquivo programa.txt deve conter instruções e dados no seguinte formato:
+
+Para instruções:
+endereco;i;instrucao
+
+Exemplo:
+0;i;movi r0, ca
+
+Para dados:
+endereco;d;valor
+
+Exemplo:
+ca;d;0001
+
+Todos os endereços, valores e imediatos devem estar em hexadecimal.
+
+PROGRAMA UTILIZADO
+
+O programa incluído realiza a soma de duas matrizes 3 x 3, onde cada valor possui 16 bits.
+
+A matriz A está armazenada nos endereços de 0xCA a 0xDB.
+A matriz B está armazenada nos endereços de 0xDC a 0xED.
+O resultado da soma é armazenado nos endereços de 0xEE a 0xFF.
+
+Para acompanhar a execução, basta pressionar ENTER até que a instrução hlt seja executada.
+
+Observação:
+Uma versão já compilada do simulador utilizando GCC no Ubuntu encontra-se na pasta TrabalhoCompilado.

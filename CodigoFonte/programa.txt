@@ -1,0 +1,40 @@
+0;i;movi r0, ca
+3;i;movi r1, dc
+6;i;movi r2, ee
+9;i;movi r3, 9
+c;i;movi r4, 2
+f;i;movi r5, 1
+
+12;i;ldr r6, r0
+14;i;ldr r7, r1
+16;i;add r6, r7
+18;i;str r6, r2
+1a;i;add r0, r4
+1c;i;add r1, r4
+1e;i;add r2, r4
+20;i;sub r3, r5
+22;i;movi r7, 0
+25;i;cmp r3, r7
+27;i;je 2d
+2a;i;jmp 12
+2d;i;hlt
+
+ca;d;0001
+cc;d;0002
+ce;d;0003
+d0;d;0004
+d2;d;0005
+d4;d;0006
+d6;d;0007
+d8;d;0008
+da;d;0009
+
+dc;d;000A
+de;d;0014
+e0;d;001E
+e2;d;0028
+e4;d;0032
+e6;d;003C
+e8;d;0046
+ea;d;0050
+ec;d;005A
